@@ -1,9 +1,9 @@
 function Navbar(){
     return(
-        <header className='w-full font-jura h-14 px-40 flex justify-between items-center fixed bg-white '>
+        <header className='w-full font-jura h-14 px-40 flex justify-between items-center fixed bg-white'>
         <p>Kim Terrence</p>
         <nav id='Nav'>
-          <ul className='flex items-center justify-center gap-10 font-bold text-1xl'>
+          <ul className='flex flex-col items-center justify-center gap-10 font-bold text-1xl invisible sm:visible sm:flex-row'>
             <li><a href="#Home" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>Home</a></li>
             <li><a href="#About" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>About</a></li>
             <li><a href="#Projects" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>Projects</a></li>

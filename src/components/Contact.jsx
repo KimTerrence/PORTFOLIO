@@ -5,17 +5,17 @@ import { FaFacebook } from "react-icons/fa";
 
 function Contact(){
     return(
-        <div  id='Contact' className="w-full h-screen flex px-56 justify-center flex-row items-center font-jura gap-5">
+        <div  id='Contact' className="w-full h-screen flex px-10 xl:px-56 justify-center flex-col md:flex-row items-center font-jura gap-5">
                 <div className="w-full flex flex-col gap-5">
-                    <p className="text-6xl">Lets Colaborate</p>
-                    <p className="text-xl">
+                    <p className="text-4xl text-center md:text-left md:text-6xl">Lets Colaborate</p>
+                    <p className="md:text-xl">
                     "It is better to collaborate than having a competition!
                     
                     Let's brainstorm ideas and make it into a reality"
                     </p>
                     <div className="flex items-center gap-10">
-                        <a href=""><FaGithub className="h-10 w-10" /></a>
-                        <a href=""><FaFacebook className="h-10 w-10"/></a>
+                        <a href="https://github.com/KimTerrence"><FaGithub className="h-10 w-10" /></a>
+                        <a href="https://web.facebook.com/profile.php?id=100085099320590"><FaFacebook className="h-10 w-10"/></a>
                         <a href=""><IoMail className="h-12 w-12"/></a>
                     </div>
                 </div>
