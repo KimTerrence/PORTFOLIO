@@ -1,16 +1,36 @@
-function Navbar(){
-    return(
-        <header className='w-full font-jura h-14 px-40 flex justify-between items-center fixed bg-white'>
-        <p>Kim Terrence</p>
-        <nav id='Nav'>
-          <ul className='flex flex-col items-center justify-center gap-10 font-bold text-1xl invisible sm:visible sm:flex-row'>
-            <li><a href="#Home" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>Home</a></li>
-            <li><a href="#About" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>About</a></li>
-            <li><a href="#Projects" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>Projects</a></li>
-            <li><a href="#Contact" className='p-3  hover:bg-black hover:text-white hover:rounded-lg hover:duration-500'>Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    )
+import { useState } from "react";
+import React from "react";
+import { navbarMenu } from "../mockData/data";
+import { IoIosMenu } from "react-icons/io";
+import ResponsiveNavbar from "./ResponsiveNavbar.jsx";
+
+
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false)
+  return(
+    <nav className="font-jura flex items-center justify-between p-10 md:px-40 h-16 w-full fixed bg-white">
+      <div>
+        <p className="font-bold">Kim Terrence</p>
+      </div>
+      <div className="hidden sm:block">
+        <ul className="flex gap-5">
+          {navbarMenu.map((item) => {
+            return <li key={item.id}> 
+                      <a href={item.link} className="px-5 py-3 rounded-xl hover:text-white hover:bg-black">{item.title}</a>
+                    </li>
+          })}
+        </ul>
+      </div>
+
+{/*------mobile humberger menu-----*/}
+    <div className="sm:hidden cursor-pointer" onClick={() => setOpen(!open)}>
+      <IoIosMenu size={30}/>
+    </div>
+
+    <ResponsiveNavbar open={open}/>
+    </nav>
+  )
 }
+
 export default Navbar
