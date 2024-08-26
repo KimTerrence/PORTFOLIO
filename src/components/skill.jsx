@@ -2,7 +2,7 @@ import { RxTriangleRight } from "react-icons/rx";
 
 function skill(){
     return(
-        <div className="w-full flex flex-col  items-center px-10 xl:px-56 pb-20 gap-5 lg:flex-row">
+        <div className="w-full flex flex-col  items-center px-10 xl:px-56 pb-20 gap-5 lg:flex-row bg-zinc-100 text-black">
             <div className="w-full flex flex-col justify-between ">
                 <p className="text-3xl py-10">Skills & Achievements</p>
                 <div className="w-full flex flex-col  gap-5 ">

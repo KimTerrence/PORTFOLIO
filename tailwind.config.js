@@ -7,10 +7,14 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'jura':["Jura", "sans-serif"]
+        'jura':["Jura", "sans-serif"],
+        'oswald':["Oswald"]
       },
       height:{
         'big': '35rem'
+      },
+      fontSize:{
+        '10xl':'10rem'
       }
     },
   },
