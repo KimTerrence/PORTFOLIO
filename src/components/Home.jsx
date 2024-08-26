@@ -10,7 +10,7 @@ function Home(){
             <div className="h-full w-full flex items-center justify-center absolute top-20">
                 <img src="/assets/giyu.png" alt="" className="h-96 md:h-big "/>
             </div>
-            <div className="h-full w-full flex items-center justify-center absolute top-40"  >
+            <div className="h-full w-full flex items-center justify-center absolute top-40 overflow-x-hidden" >
         
                     <img src="/assets/wave.png" alt="" className="absolute h-60 md:h-96 lg:h-big"/>
                     <img src="/assets/wave.png" alt="" className="h-60  md:h-96 lg:h-big"/>
